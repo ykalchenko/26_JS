@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norn</title>
+</head>
+
+<body>
+  <script>
+    mony = prompt("Введіть суму грошей в гаманці, в грн", [500]);
+    chocolate = prompt("Введіть ціну однієї шоколадки, в грн", [20]);
+    result1 = mony / chocolate;
+    alert(`Ви можете купити ${result1.toFixed(0)} шоколадок, лишається ${mony - (result1.toFixed(0) * chocolate)} грн решти`);
+
+    anyNumber = prompt("Введіть тризначне число", [793]);
+    c = anyNumber % 10
+    x = Math.floor(anyNumber / 10)
+    b = x % 10
+    a = Math.floor(x / 10)
+    alert(c * 100 + b * 10 + a)
+  </script>
+</body>
+
+</html>
